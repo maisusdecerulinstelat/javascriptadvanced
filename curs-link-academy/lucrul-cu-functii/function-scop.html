@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domeniul de aplicare a unei functii</title>
+  </head>
+  <body>
+    <script>
+
+      // (function(){
+      //   var number = 5;
+      //   console.log(number);
+      // })();
+      
+      // var number = 18;
+      // console.log(number);
+
+
+      function subtractSquares(a,b) {
+        function square(x) {
+          return x * x ;
+        }
+        return square(a) - square(b);
+      }
+
+      console.log(subtractSquares(6, 3));
+
+    </script>
+  </body>
+</html>

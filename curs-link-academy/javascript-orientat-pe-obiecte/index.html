@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Object</title>
+  </head>
+  <body>
+    <script>
+      // var subaryLegacy = {
+
+      //   make: "Subary",
+      //   model: "Legacy",
+      //   weight: 1560,
+      //   color: "black"
+      // }
+
+      // var subaryLegacy = new Object();
+      // subaryLegacy.make = "Subary";
+      // subaryLegacy.model = "Legacy";
+      // subaryLegacy.weight = 1560;
+      // subaryLegacy.color  = "black";
+
+      // daca trebuie sa creeam un obiect rapid si sigur fara a fi nevoie sa 
+      // creati un numr mai mare de obiecte intrun set identic , cel mai bine e sa utilizti prima abordare
+      // adica obiectul de tip literal
+
+      function Car(make, model, weight, color) {
+        this.make = make ;
+        this.model = model;
+        this.weight = weight;
+        this.color = color;
+
+        this.startEngine = function(){
+          return "Engine of" + this.make + " " +this.model + "started."
+        }
+      }
+        // Cand stiti in avans ca trebuie sa creeati un numar mai mare de obiecte cu un set de caracteristici
+        // identic   e mai bine sa folosim propria funcie constructor,adica a doua varianta ,care implica
+        // creearea unei functii constructora obiectului
+
+
+
+      var subaryLegacy = new Car("Subary", "Legacy", 1560, "black");
+      var fordTaurus = new Car ("Ford", "Taurus", 1876, "black");
+      var porchePanamera = new Car("Porche", "Panamera", 1963, "grey");
+
+      console.log(subaryLegacy.startEngine());
+
+    </script>
+  </body>
+</html>

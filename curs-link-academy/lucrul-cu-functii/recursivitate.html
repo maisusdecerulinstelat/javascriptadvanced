@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplu de baza al Recursivitatii</title>
+</head>
+<body>
+  
+  <script>
+
+    // function countdown(start) {
+    //   for (let i = start; i>= 0; i--) {
+    //     console.log(i);
+    //   }
+    // }
+
+    function countdown(start) {
+
+      if(start < 0) {
+        return;
+      }
+
+      console.log(start);
+      countdown(--start);
+      
+    }
+
+    countdown(8);
+
+  </script>
+
+</body>
+</html>

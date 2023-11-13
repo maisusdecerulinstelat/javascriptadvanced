@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <script>
+
+      function Coupon(firstName, lastName) {
+
+      var code = (Math.random() *10e16).toString();
+
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.getCode = function () {return code};
+      }
+      let coupon1 = new Coupon("Jhon", "Lord");
+      console.log(coupon1.getCode());
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      // function calculateRectArea(a, b) {
+      //   return a * b;
+      // }
+
+      // var result = calculateRectArea(5, 10);
+
+      // console.log(result);
+
+      // function sayHello(name) {
+      //   console.log("Hello"  +  name);
+      // }
+
+      // sayHello("Ben");
+
+      // function sayHelloworld(){
+      //   console.log("Hello World");
+      // }
+      // sayHelloworld();
+
+      
+
+      // var calculateRectArea = new Function("a", "b", "return a*b");
+      // var result = calculateRectArea(5, 10);
+      // console.log(result);
+
+      function sum() {
+        let returnValue = 0;
+
+        for (let i = 0; i < arguments.length; i++) {
+          returnValue += arguments[i];
+        }
+
+        return returnValue;
+      }
+      let sumResult = sum (10,15,15,10,10,10,10);
+      console.log(sumResult);
+
+
+
+    </script>
+  </body>
+</html>
